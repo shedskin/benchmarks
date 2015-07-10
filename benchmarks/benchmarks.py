@@ -45,3 +45,20 @@ class Printing(Testing):
 
     def time_ints(self):
         self.run_test("print_ints")
+
+
+class Reference(Testing):
+    """
+    Benchmark reference C/C++ tests.
+    """
+    folder = "reference"
+
+    def setup(self):
+        os.chdir(os.path.sep.join([cwd, self.folder]))
+        asv.util.check_call("gcc empty_startup.c -o empty_startup", shell=True)
+        os.chdir(cwd)
+
+    #def time_empty_startup(self):
+    #    binary = os.path.sep.join([cwd, self.folder, "empty_startup"])
+    #    cmd = "%s > /dev/null" % binary
+    #    asv.util.check_call(cmd, shell=True)
