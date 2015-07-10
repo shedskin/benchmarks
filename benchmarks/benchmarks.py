@@ -2,7 +2,8 @@
 # See "Writing benchmarks" in the asv docs for more information.
 
 import os
-import subprocess
+
+import asv.util
 
 cwd = os.getcwdu()
 testdir = os.path.sep.join([cwd, "microtests"])
@@ -14,18 +15,33 @@ class Testing(object):
         Compile @name.
         """
         os.chdir(testdir)
-        subprocess.call("shedskin %s" % name, shell=True)
-        subprocess.call("make")
+        asv.util.check_call("shedskin %s" % name, shell=True)
+        asv.util.check_call("make")
         os.chdir(cwd)
+
+    def run_test(self, test):
+        binary = os.path.sep.join([testdir, test])
+        cmd = "%s > /dev/null" % binary
+        asv.util.check_call(cmd, shell=True)
+
+
+class Startup(Testing):
+    """
+    Benchmark all startup tests.
+    """
+    def setup(self):
+        self.compile("empty_startup.py")
+
+    def time_empty_startup(self):
+        self.run_test("empty_startup")
 
 
 class Printing(Testing):
     """
-    A benchmark that tests the various print_*.py functions in the microtests
-    directory.
+    Benchmark all printing tests.
     """
     def setup(self):
         self.compile("print_ints.py")
 
     def time_ints(self):
-        subprocess.call(os.path.sep.join([testdir, "print_ints"]))
+        self.run_test("print_ints")
