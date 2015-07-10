@@ -1,0 +1,27 @@
+{
+    "benchmarks.Printing.time_ints": {
+        "code": "def time_ints(self):\n    self.run_test(\"print_ints\")\n", 
+        "goal_time": 2.0, 
+        "name": "benchmarks.Printing.time_ints", 
+        "number": 0, 
+        "param_names": [], 
+        "params": [], 
+        "repeat": 0, 
+        "timeout": 60.0, 
+        "type": "time", 
+        "unit": "seconds"
+    }, 
+    "benchmarks.Startup.time_empty_startup": {
+        "code": "def time_empty_startup(self):\n    self.run_test(\"empty_startup\")\n", 
+        "goal_time": 2.0, 
+        "name": "benchmarks.Startup.time_empty_startup", 
+        "number": 0, 
+        "param_names": [], 
+        "params": [], 
+        "repeat": 0, 
+        "timeout": 60.0, 
+        "type": "time", 
+        "unit": "seconds"
+    }, 
+    "version": 1
+}

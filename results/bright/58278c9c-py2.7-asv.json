@@ -1,0 +1,23 @@
+{
+    "commit_hash": "58278c9c3c0cd4bf50502d77bfbc3165572e8efe", 
+    "date": 1433645030000, 
+    "params": {
+        "arch": "x86_64", 
+        "asv": null, 
+        "cpu": "Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz", 
+        "machine": "bright", 
+        "os": "Linux 4.0.6-300.fc22.x86_64", 
+        "python": "2.7", 
+        "ram": "8GB"
+    }, 
+    "profiles": {}, 
+    "python": "2.7", 
+    "requirements": {
+        "asv": null
+    }, 
+    "results": {
+        "benchmarks.Printing.time_ints": 0.0008480882369999999, 
+        "benchmarks.Startup.time_empty_startup": 0.0008250771440000002
+    }, 
+    "version": 1
+}
