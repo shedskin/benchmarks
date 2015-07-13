@@ -1,6 +1,6 @@
 {
-    "commit_hash": "58278c9c3c0cd4bf50502d77bfbc3165572e8efe", 
-    "date": 1433645030000, 
+    "commit_hash": "cfbeb511e62a54dba9a53e948e3cfb2277adc1c0", 
+    "date": 1292063423000, 
     "params": {
         "arch": "x86_64", 
         "asv": null, 
@@ -15,6 +15,9 @@
     "requirements": {
         "asv": null
     }, 
-    "results": {}, 
+    "results": {
+        "benchmarks.Printing.time_ints": 0.889136791229248, 
+        "benchmarks.Startup.time_empty_startup": 0.004926390647888183
+    }, 
     "version": 1
 }
