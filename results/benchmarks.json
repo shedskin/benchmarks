@@ -6,8 +6,8 @@
         "number": 0, 
         "param_names": [], 
         "params": [], 
-        "repeat": 0, 
-        "timeout": 60.0, 
+        "repeat": 100, 
+        "timeout": 600.0, 
         "type": "time", 
         "unit": "seconds"
     }, 
@@ -18,8 +18,8 @@
         "number": 0, 
         "param_names": [], 
         "params": [], 
-        "repeat": 0, 
-        "timeout": 60.0, 
+        "repeat": 100, 
+        "timeout": 600.0, 
         "type": "time", 
         "unit": "seconds"
     }, 

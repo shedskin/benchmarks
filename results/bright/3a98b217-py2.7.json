@@ -12,8 +12,6 @@
     "profiles": {}, 
     "python": "2.7", 
     "requirements": {}, 
-    "results": {
-        "benchmarks.Printing.time_ints": null
-    }, 
+    "results": {}, 
     "version": 1
 }

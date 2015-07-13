@@ -4,12 +4,17 @@
 import os
 
 import asv.util
+import timeit
 
 cwd = os.getcwdu()
 testdir = os.path.sep.join([cwd, "microtests"])
 
 
 class Testing(object):
+    repeat = 100
+    timeout = 600.0
+    timer = timeit.default_timer
+
     def compile(self, name):
         """
         Compile @name.

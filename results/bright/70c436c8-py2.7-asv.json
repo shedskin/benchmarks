@@ -15,9 +15,6 @@
     "requirements": {
         "asv": null
     }, 
-    "results": {
-        "benchmarks.Printing.time_ints": 0.000842682772, 
-        "benchmarks.Startup.time_empty_startup": 0.0008158970080000001
-    }, 
+    "results": {}, 
     "version": 1
 }
