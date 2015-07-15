@@ -16,6 +16,7 @@
         "asv": null
     }, 
     "results": {
+        "benchmarks.Printing.time_floats": 0.8489260673522949, 
         "benchmarks.Printing.time_ints": 0.889136791229248, 
         "benchmarks.Startup.time_empty_startup": 0.004926390647888183
     }, 
