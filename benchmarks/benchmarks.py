@@ -17,11 +17,16 @@ class Testing(object):
 
     def compile(self, name):
         """
-        Compile @name.
+        Compile @name. If @name is a list, loop over it.
         """
         os.chdir(testdir)
-        asv.util.check_call("shedskin %s" % name, shell=True)
-        asv.util.check_call("make")
+        if isinstance(name, list):
+            for n in name:
+                asv.util.check_call("shedskin %s" % n, shell=True)
+                asv.util.check_call("make")
+        else:
+            asv.util.check_call("shedskin %s" % name, shell=True)
+            asv.util.check_call("make")
         os.chdir(cwd)
 
     def run_test(self, test):
@@ -45,9 +50,13 @@ class Printing(Testing):
     """
     Benchmark all printing tests.
     """
+    tests = ["print_floats.py",
+             "print_ints.py",
+             "print_str.py",
+            ]
+
     def setup(self):
-        self.compile("print_floats.py")
-        self.compile("print_ints.py")
+        self.compile(self.tests)
 
     def time_floats(self):
         self.run_test("print_ints")
