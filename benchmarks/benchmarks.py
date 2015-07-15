@@ -46,7 +46,11 @@ class Printing(Testing):
     Benchmark all printing tests.
     """
     def setup(self):
+        self.compile("print_floats.py")
         self.compile("print_ints.py")
+
+    def time_floats(self):
+        self.run_test("print_ints")
 
     def time_ints(self):
         self.run_test("print_ints")
