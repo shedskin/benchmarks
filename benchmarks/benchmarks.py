@@ -67,7 +67,7 @@ class Reference(Testing):
         asv.util.check_call("gcc empty_startup.c -o empty_startup", shell=True)
         os.chdir(cwd)
 
-    #def time_empty_startup(self):
-    #    binary = os.path.sep.join([cwd, self.folder, "empty_startup"])
-    #    cmd = "%s > /dev/null" % binary
-    #    asv.util.check_call(cmd, shell=True)
+    # def time_empty_startup(self):
+    #     binary = os.path.sep.join([cwd, self.folder, "empty_startup"])
+    #     cmd = "%s > /dev/null" % binary
+    #     asv.util.check_call(cmd, shell=True)
