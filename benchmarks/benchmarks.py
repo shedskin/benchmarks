@@ -50,7 +50,8 @@ class Printing(Testing):
     """
     Benchmark all printing tests.
     """
-    tests = ["print_floats.py",
+    tests = ["print_empty.py",
+             "print_floats.py",
              "print_ints.py",
              "print_str.py",
             ]
@@ -58,11 +59,17 @@ class Printing(Testing):
     def setup(self):
         self.compile(self.tests)
 
+    def time_empty(self):
+        self.run_test("print_empty")
+
     def time_floats(self):
         self.run_test("print_ints")
 
     def time_ints(self):
         self.run_test("print_ints")
+
+    def time_str(self):
+        self.run_test("print_str")
 
 
 class Reference(Testing):
