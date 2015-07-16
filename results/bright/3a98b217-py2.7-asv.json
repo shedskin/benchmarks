@@ -16,8 +16,10 @@
         "asv": null
     }, 
     "results": {
+        "benchmarks.Printing.time_empty": 0.07008538246154786, 
         "benchmarks.Printing.time_floats": 0.851172924041748, 
         "benchmarks.Printing.time_ints": 0.8934779167175293, 
+        "benchmarks.Printing.time_str": 0.9058408737182617, 
         "benchmarks.Startup.time_empty_startup": 0.004868161678314209
     }, 
     "version": 1
