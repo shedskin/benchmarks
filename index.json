@@ -1,0 +1,154 @@
+{
+    "benchmarks": {
+        "benchmarks.Printing.time_empty": {
+            "code": "def time_empty(self):\n    self.run_test(\"print_empty\")\n", 
+            "goal_time": 2.0, 
+            "name": "benchmarks.Printing.time_empty", 
+            "number": 0, 
+            "param_names": [], 
+            "params": [], 
+            "repeat": 100, 
+            "timeout": 600.0, 
+            "type": "time", 
+            "unit": "seconds"
+        }, 
+        "benchmarks.Printing.time_floats": {
+            "code": "def time_floats(self):\n    self.run_test(\"print_ints\")\n", 
+            "goal_time": 2.0, 
+            "name": "benchmarks.Printing.time_floats", 
+            "number": 0, 
+            "param_names": [], 
+            "params": [], 
+            "repeat": 100, 
+            "timeout": 600.0, 
+            "type": "time", 
+            "unit": "seconds"
+        }, 
+        "benchmarks.Printing.time_ints": {
+            "code": "def time_ints(self):\n    self.run_test(\"print_ints\")\n", 
+            "goal_time": 2.0, 
+            "name": "benchmarks.Printing.time_ints", 
+            "number": 0, 
+            "param_names": [], 
+            "params": [], 
+            "repeat": 100, 
+            "timeout": 600.0, 
+            "type": "time", 
+            "unit": "seconds"
+        }, 
+        "benchmarks.Printing.time_str": {
+            "code": "def time_str(self):\n    self.run_test(\"print_str\")\n", 
+            "goal_time": 2.0, 
+            "name": "benchmarks.Printing.time_str", 
+            "number": 0, 
+            "param_names": [], 
+            "params": [], 
+            "repeat": 100, 
+            "timeout": 600.0, 
+            "type": "time", 
+            "unit": "seconds"
+        }, 
+        "benchmarks.Startup.time_empty_startup": {
+            "code": "def time_empty_startup(self):\n    self.run_test(\"empty_startup\")\n", 
+            "goal_time": 2.0, 
+            "name": "benchmarks.Startup.time_empty_startup", 
+            "number": 0, 
+            "param_names": [], 
+            "params": [], 
+            "repeat": 100, 
+            "timeout": 600.0, 
+            "type": "time", 
+            "unit": "seconds"
+        }
+    }, 
+    "date_to_hash": {
+        "1292063423000": "cfbeb511", 
+        "1308079787000": "7f7388c3", 
+        "1315648151000": "7b186aaf", 
+        "1323985137000": "66c967ca", 
+        "1357713841000": "119469b0", 
+        "1371369803000": "b54fa10d", 
+        "1427816385000": "70c436c8", 
+        "1431419203000": "1eac08fc", 
+        "1431509698000": "3a98b217"
+    }, 
+    "machines": {
+        "bright": {
+            "arch": "x86_64", 
+            "cpu": "Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz", 
+            "machine": "bright", 
+            "os": "Linux 4.0.6-300.fc22.x86_64", 
+            "ram": "8GB", 
+            "version": 1
+        }
+    }, 
+    "params": {
+        "arch": [
+            "x86_64"
+        ], 
+        "asv": [
+            null
+        ], 
+        "branch": [
+            "master"
+        ], 
+        "cpu": [
+            "Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz"
+        ], 
+        "machine": [
+            "bright"
+        ], 
+        "os": [
+            "Linux 4.0.6-300.fc22.x86_64"
+        ], 
+        "python": [
+            "2.7"
+        ], 
+        "ram": [
+            "8GB"
+        ]
+    }, 
+    "project": "shedskin", 
+    "project_url": "https://github.com/shedskin/shedskin", 
+    "show_commit_url": "#", 
+    "tags": {
+        "v0.0.25": 1192224730000, 
+        "v0.0.26": 1200519130000, 
+        "v0.0.27": 1203765795000, 
+        "v0.0.28": 1212342440000, 
+        "v0.0.29": 1221901215000, 
+        "v0.0.29-2": 1221901215000, 
+        "v0.0.30": 1227991568000, 
+        "v0.1.0": 1232817411000, 
+        "v0.1.0-1": 1232817411000, 
+        "v0.1.1": 1239992375000, 
+        "v0.1.1-2": 1239992375000, 
+        "v0.2.0": 1247664477000, 
+        "v0.2.0-1": 1247664477000, 
+        "v0.3.0": 1263146321000, 
+        "v0.3.0-1": 1263225310000, 
+        "v0.3.1-1": 1263225310000, 
+        "v0.4.0": 1269716635000, 
+        "v0.4.0-1": 1269716635000, 
+        "v0.5.0": 1277023187000, 
+        "v0.5.0-1": 1277023187000, 
+        "v0.6.0": 1287218670000, 
+        "v0.6.0-1": 1287330885000, 
+        "v0.6.0-2": 1287330885000, 
+        "v0.7.0": 1292063423000, 
+        "v0.7.1": 1298111592000, 
+        "v0.7.1-1": 1298461283000, 
+        "v0.7.1-2": 1298461283000, 
+        "v0.7.1-3": 1298461283000, 
+        "v0.8.0": 1308079787000, 
+        "v0.8.0-1": 1308079787000, 
+        "v0.9.0": 1315648151000, 
+        "v0.9.0-1": 1316895542000, 
+        "v0.9.1": 1326578135000, 
+        "v0.9.2": 1336226644000, 
+        "v0.9.2-1": 1336324579000, 
+        "v0.9.2-2": 1336324579000, 
+        "v0.9.3": 1357713841000, 
+        "v0.9.4": 1371369803000
+    }
+}

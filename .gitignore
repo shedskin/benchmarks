@@ -1,0 +1,6 @@
+*.pyc
+*.cpp
+*.hpp
+Makefile
+env/
+shedskin/

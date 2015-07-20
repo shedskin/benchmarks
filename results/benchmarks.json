@@ -1,0 +1,63 @@
+{
+    "benchmarks.Printing.time_empty": {
+        "code": "def time_empty(self):\n    self.run_test(\"print_empty\")\n", 
+        "goal_time": 2.0, 
+        "name": "benchmarks.Printing.time_empty", 
+        "number": 0, 
+        "param_names": [], 
+        "params": [], 
+        "repeat": 100, 
+        "timeout": 600.0, 
+        "type": "time", 
+        "unit": "seconds"
+    }, 
+    "benchmarks.Printing.time_floats": {
+        "code": "def time_floats(self):\n    self.run_test(\"print_ints\")\n", 
+        "goal_time": 2.0, 
+        "name": "benchmarks.Printing.time_floats", 
+        "number": 0, 
+        "param_names": [], 
+        "params": [], 
+        "repeat": 100, 
+        "timeout": 600.0, 
+        "type": "time", 
+        "unit": "seconds"
+    }, 
+    "benchmarks.Printing.time_ints": {
+        "code": "def time_ints(self):\n    self.run_test(\"print_ints\")\n", 
+        "goal_time": 2.0, 
+        "name": "benchmarks.Printing.time_ints", 
+        "number": 0, 
+        "param_names": [], 
+        "params": [], 
+        "repeat": 100, 
+        "timeout": 600.0, 
+        "type": "time", 
+        "unit": "seconds"
+    }, 
+    "benchmarks.Printing.time_str": {
+        "code": "def time_str(self):\n    self.run_test(\"print_str\")\n", 
+        "goal_time": 2.0, 
+        "name": "benchmarks.Printing.time_str", 
+        "number": 0, 
+        "param_names": [], 
+        "params": [], 
+        "repeat": 100, 
+        "timeout": 600.0, 
+        "type": "time", 
+        "unit": "seconds"
+    }, 
+    "benchmarks.Startup.time_empty_startup": {
+        "code": "def time_empty_startup(self):\n    self.run_test(\"empty_startup\")\n", 
+        "goal_time": 2.0, 
+        "name": "benchmarks.Startup.time_empty_startup", 
+        "number": 0, 
+        "param_names": [], 
+        "params": [], 
+        "repeat": 100, 
+        "timeout": 600.0, 
+        "type": "time", 
+        "unit": "seconds"
+    }, 
+    "version": 1
+}
